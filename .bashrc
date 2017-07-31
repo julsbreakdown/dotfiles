@@ -56,3 +56,9 @@ export TERM=xterm
 alias ll='ls -lh'
 alias la='ls -A'
 alias l='ls -CF'
+
+#remove beep
+set bell-style none
+
+#QGIS
+alias qgis_dev='/home/jwaddle/dev/cpp/QGIS/build-master/output/bin/qgis'
