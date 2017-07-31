@@ -53,4 +53,6 @@ export TERM=xterm
 #export NVM_DIR="/$HOME/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 #[ -s "$NVM_DIR/nvm.sh" ] && nvm use 6 # and use node 6
-
+alias ll='ls -lh'
+alias la='ls -A'
+alias l='ls -CF'
