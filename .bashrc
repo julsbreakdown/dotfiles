@@ -15,6 +15,41 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+#pens current directory in a file explorer
+alias explore='nautilus .'
+
+#Opens current directory in a file explorer with super user privileges
+alias suexplore='sudo nautilus .'
+
+#Opens current directory in Ubuntu's Disk Usage Analyzer GUI with super user privileges in the background
+alias analyze='gksudo baobab . &'
+
+#Opens a GUI text editor in the background. Can obviously be replaced with your favorite editor
+alias text='gedit &'
+#Same as above with super user privileges
+alias sutext='gksudo gedit &'
+
+#Opens a file with whatever program would open by double clicking on it in a GUI file explorer
+#Usage: try someDocument.doc
+alias try='gnome-open'
+
+#lists contents of current directory with file permisions
+alias ll='ls -l -sort'
+
+#list all directories in current directories
+alias ldir='ls -l | grep ^d'
+
+#self explanatory
+alias ..='cd ..'
+alias ...='cd ../../'
+
+#show aliases
+alias a='echo "------------Your aliases------------";alias'
+#Apply changes to aliases
+alias sa='source ~/.bash_aliases;echo "Bash aliases sourced."'
+#Edit Aliases
+alias via='gksudo gedit ~/.bash_aliases &'
+
 if [ `id -u` -eq 0 ]; then
   export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/bin/X11:/usr/games"
 fi
