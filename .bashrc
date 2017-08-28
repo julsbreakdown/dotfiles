@@ -15,6 +15,8 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+# temperature monitoring
+alias tp='watch -n 1 -d sensors'
 #pens current directory in a file explorer
 alias explore='nautilus .'
 
