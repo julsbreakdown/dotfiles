@@ -1,8 +1,10 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
-
 export LESS='-xfr'
 export EDITOR=vim
 
+#basheditupdate
+alias editbash='vim ~/.bashrc'
+alias updatebash='source ~/.bashrc'
 # You may uncomment the following lines if you want `ls' to be colorized:
 export LS_OPTIONS='--color=auto'
 export HISTCONTROL=ignoredups
@@ -72,9 +74,9 @@ export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUPSTREAM=verbose
 export GIT_PS1_DESCRIBE_STYLE=branch
 export GIT_PS1_SHOWCOLORHINTS=1
-export PROMPT_COMMAND='__git_ps1 "\[\e[1;32m\]\u\[\e[0;39m\]@\[\e[1;36m\]\h\[\e[0;39m\]:\[\e[1;33m\]\w\[\e[1;39m\]" "\n\[\e[0;39m\]$ "'
+export PROMPT_COMMAND='__git_ps1 "\[\e[1;32m\]\u\[\e[0;39m\]@\[\e[1;36m\]\h\[\e[0;39m\]:\[\e[1;34m\]\w\[\e[1;39m\]" "\n\[\e[0;39m\]$ "'
 
-#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w$(git_branch)\[\033[00m\]\n\$ ' 
+#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\096[00m\]:\[\096[01;34m\]\w$(git_branch)\[\096[00m\]\n\$ ' 
 # git
 #function git_branch {
 #    _branch="$(git branch 2>/dev/null | sed -e "/^\s/d" -e "s/^\*\s//")"
