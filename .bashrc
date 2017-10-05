@@ -83,8 +83,6 @@ export PROMPT_COMMAND='__git_ps1 "\[\e[1;32m\]\u\[\e[0;39m\]@\[\e[1;36m\]\h\[\e[
 #    test -n "$_branch" && echo -e " \e[0;32m[git::$_branch]"
 #}
 
-export TERM=xterm
-
 # docker
 #alias docker-gc='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc:ro spotify/docker-gc'
 
