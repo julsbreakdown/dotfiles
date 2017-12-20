@@ -24,6 +24,7 @@
     dic = diff --cached
     diffstat = diff --stat
     lol = log --decorate --pretty=oneline --abbrev-commit --all --graph
+	lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
 
 [core]
 	excludesfile = /home/jwaddle/.gitignore
