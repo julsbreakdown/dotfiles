@@ -2,9 +2,12 @@
 export LESS='-xfr'
 export EDITOR=vim
 
+bindkey "\033[1~" beginning-of-line
+bindkey "\033[4~" end-of-line
 #basheditupdate
 alias editbash='vim ~/.bashrc'
 alias updatebash='source ~/.bashrc'
+
 # You may uncomment the following lines if you want `ls' to be colorized:
 export LS_OPTIONS='--color=auto'
 export HISTCONTROL=ignoredups
